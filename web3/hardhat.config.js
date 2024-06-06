@@ -1,6 +1,6 @@
 require("@matterlabs/hardhat-zksync-solc");
-const PRIVATE_KEY = 
-"6b28ef0d814eddbdd6cb1ab8e4cec4e24bf7d1fb4517142997fe57c4b3357f37";
+// Use your own Private Key
+const PRIVATE_KEY = "";
 const RPC_URL = "https://alfajores-forno.celo-testnet.org"
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -42,7 +42,7 @@ module.exports = {
       } ,
       alfajores : {
         url : RPC_URL,
-        accounts : ['0x6b28ef0d814eddbdd6cb1ab8e4cec4e24bf7d1fb4517142997fe57c4b3357f37']
+        accounts : ['']  // Add your account
       }
   },
   solidity: {
